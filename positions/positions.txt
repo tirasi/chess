@@ -1,0 +1,14 @@
+# Position set for Track A (Prolog checker) golden tests + fuzzing seed
+# Format: FEN | tag | notes
+# Tags: easy, tactical, trap, quiet, endgame, pinned_piece, discovered_attack, xray
+
+rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1 | easy | open e5
+r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR w KQkq - 4 4 | tactical | bishop on c4 attacks f7
+rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2 | quiet | symmetrical pawn structure
+8/8/8/8/8/8/8/4K2R w K - 0 1 | endgame | king castling
+rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1 | pinned_piece | (baseline, see below)
+8/5p2/8/8/8/8/5KP2/6k1 w - - 0 1 | discovered_attack | pawn push reveals rook
+8/8/8/8/8/8/8/4k3 w - - 0 1 | xray | empty board minimal
+rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1 | easy | starting position
+8/8/8/8/8/8/8/7k w - - 0 1 | trap | lone king corner
+r1bqkbnr/pppp1ppp/2n2p2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK1NR w KQkq - 4 4 | tactical | Nf3 fork setup

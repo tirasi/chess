@@ -1,0 +1,8 @@
+{
+  "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1",
+  "move": "e2e4",
+  "claims": [
+    { "id": "c1", "type": "attacks", "subject": "e4", "object": "d5", "asserted": true },
+    { "id": "c2", "type": "defends", "subject": "e4", "object": "e5", "asserted": true },
+    { "id": "c3", "type": "controls_square", "subject": "e4", "object": "d5", "asserted": true }
+  ]

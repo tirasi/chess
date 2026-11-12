@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Claims Input",
+  "description": "Input to the claim checker CLI. Claims describe the board AFTER the move is played.",
+  "type": "object",
+  "required": ["fen", "move", "claims"],
+  "properties": {
+    "fen": {
+      "type": "string",
+      "description": "FEN string of the position before the move"
+    },
+    "move": {
+      "type": "string",
+      "pattern": "^[a-h][1-8][a-h][1-8][qrbn]?$",
+      "description": "UCI move (e.g. g1f3, e7e8q)"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "subject", "object", "asserted"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["attacks", "defends", "pins", "forks", "blocks", "opens_line", "threatens", "controls_square"]
+          },
+          "subject": { "type": "string", "pattern": "^[a-h][1-8]$" },
+          "object": { "type": "string", "pattern": "^[a-h][1-8]$" },
+          "asserted": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

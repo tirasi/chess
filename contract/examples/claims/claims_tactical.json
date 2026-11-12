@@ -1,0 +1,9 @@
+{
+  "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR w KQkq - 4 4",
+  "move": "f1c4",
+  "claims": [
+    { "id": "c1", "type": "attacks", "subject": "c4", "object": "f7", "asserted": true },
+    { "id": "c2", "type": "pins", "subject": "c4", "object": "e5", "asserted": false },
+    { "id": "c3", "type": "opens_line", "subject": "c4", "object": "f1-a6", "asserted": true }
+  ]
+}

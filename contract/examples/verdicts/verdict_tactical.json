@@ -1,0 +1,8 @@
+{
+  "move_legal": true,
+  "results": [
+    { "id": "c1", "verdict": "true" },
+    { "id": "c2", "verdict": "unknown", "reason": "line type not supported yet" },
+    { "id": "c3", "verdict": "false" }
+  ]
+}

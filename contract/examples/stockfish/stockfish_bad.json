@@ -1,0 +1,7 @@
+{
+  "move_valid": false,
+  "best_moves": ["e7e5", "c7c5"],
+  "eval_delta_cp": 45,
+  "depth": 18,
+  "threshold_cp": 30
+}

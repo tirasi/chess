@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stockfish Verdict",
+  "description": "Output of the Stockfish wrapper. Acceptable means within threshold_cp of best at fixed depth.",
+  "type": "object",
+  "required": ["move_valid", "best_moves", "eval_delta_cp", "depth", "threshold_cp"],
+  "properties": {
+    "move_valid": { "type": "boolean" },
+    "best_moves": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-h][1-8][a-h][1-8][qrbn]?$" }
+    },
+    "eval_delta_cp": { "type": "integer" },
+    "depth": { "type": "integer" },
+    "threshold_cp": { "type": "integer" }
+  }
+}

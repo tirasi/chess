@@ -1,0 +1,9 @@
+{
+  "fen": "8/8/8/8/8/8/8/4K2R w K - 0 1",
+  "move": "e1g1",
+  "claims": [
+    { "id": "c1", "type": "controls_square", "subject": "g1", "object": "g1", "asserted": true },
+    { "id": "c2", "type": "defends", "subject": "g1", "object": "h1", "asserted": true },
+    { "id": "c3", "type": "forks", "subject": "g1", "object": "a1", "asserted": false }
+  ]
+}

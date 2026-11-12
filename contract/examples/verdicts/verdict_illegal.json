@@ -1,0 +1,8 @@
+{
+  "move_legal": false,
+  "results": [
+    { "id": "c1", "verdict": "unknown" },
+    { "id": "c2", "verdict": "unknown" },
+    { "id": "c3", "verdict": "unknown" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Checker Verdict",
+  "description": "Output of the claim checker CLI. verdict is tri-state: true | false | unknown.",
+  "type": "object",
+  "required": ["move_legal", "results"],
+  "properties": {
+    "move_legal": { "type": "boolean" },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "verdict"],
+        "properties": {
+          "id": { "type": "string" },
+          "verdict": { "type": "string", "enum": ["true", "false", "unknown"] },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}
